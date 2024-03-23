@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Design Process of The Sinhala Addendum Keyboard Layout"
+title:  "The Design Process of The Sinhala Addendum Keyboard Layout"
 date:   2024-03-23 04:40:00 +0530
 ---
 
