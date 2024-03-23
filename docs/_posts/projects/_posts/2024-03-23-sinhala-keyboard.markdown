@@ -4,21 +4,21 @@ title:  "The Design Process of The Sinhala Addendum Keyboard Layout"
 date:   2024-03-23 04:40:00 +0530
 ---
 
-Recently after years of frustration with the the default Wijesekara keyboard layout used for the Sinhala language, I took it upon myself to design a keyboard layout which would be much more convenient for my day-to-day usage. After about a month of designing, I've finally come with what I'm calling the [Sinhala Addendum Keyboard Layout](https://github.com/AdelinaM17n/Sinhala-Addendum-Keyboard-Layout)
+Recently, After years of frustration with the the default Wijesekara keyboard layout used for the Sinhala language, I took it upon myself to design a much more convenient keyboard layout for day-to-day usage. After about a month of designing, I've finally come up with what I'm calling the [Sinhala Addendum Keyboard Layout](https://github.com/AdelinaM17n/Sinhala-Addendum-Keyboard-Layout)
 
 ## Background 
-The official keyboard layout that is used with the sinhala writing system is the [Wijesekara layout](https://kbdlayout.info/kbdsn1) which was first created as a layout for type-writers. This layout, while not something that is badly designed has one flaw which holds it back from adoption by the average person, which is that its letter placements are not at all obvious unless you own a keyboard whose keycaps has that information printed on them. As such most people find it difficult to use this layout since they are only really accustomed to using the QWERTY layout. Personally I am able to manually enter the unicode for a certain letter faster than typing it with the wijesekara layout
+The official keyboard layout that is used with the sinhala writing system is the [Wijesekara layout](https://kbdlayout.info/kbdsn1) which was first created as a layout for type-writers. This layout, while not something that is badly designed has one flaw which holds it back from adoption by the average person, Which is that The letter placements are not at all obvious unless the keyboard has keycaps with the letters printed on them? As such, most people find it difficult to use this layout since they are only really accustomed to using the QWERTY layout. Personally, I am able to manually enter the unicode codepoint for a certain letter quicker than typing it with the wijesekara layout
    
-Here's a preview of the Wijesekara layout for reference
+Here's a preview of the Wijesekara layout for reference,
 
 ![Wijesekara Keyboard Layout Preview](/assests/wijesekara.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
    
 ## Design Goals 
-My first and foremost goal with the design of the layout was to make sure for it to be intuitive as possible to use for anyone who is used to the QWERTY layout, this obviously meant mapping Sinhala characters phonetically with the latin letters which were closest to them. Which turned out to be a far easier task than I anticipated for \*most\* characters. Other than that I also wanted it to be able to input any character of the *Sinhala Akshara Maalawa* (සිංහල අක්ෂර මාලාව) without any major hassle.
+My primary goal with the design of the layout was to make sure for it to be intuitive as possible to use for anyone who is used to the QWERTY layout. This meant mapping Sinhala characters to Latin characters which were phonetically close to each other, which turned out to be a far easier task than I had anticipated for \*most\* characters. Other than that, I also wanted it to be able to input any character of the *Sinhala Akshara Maalawa* (සිංහල අක්ෂර මාලාව) without any major hassle.
    
 ## The Attack of The තටදඩ Nation
-The first major decision I had to make while designing this layout was the placement of the characters `ත,ට,ද,ඩ` and their aspirated and pre-nasalised counterparts. For all the other consonants with an aspirated version I was able to assign the base state of the key to the non aspirated character and the shift state to the aspirated characters, and if the character had a pre-nasalised version, I was able to assign it to `AltGr` state of the key.   
+The first major decision I had to make while designing this layout was the placement of the characters `ත,ට,ද,ඩ` and their aspirated and pre-nasalised counterparts. For other consonants with aspirated versions I was able to assign the base state of the key to the non-aspirated character and the shift state to the aspirated characters, and if the character had a pre-nasalised version, I was able to assign it to `AltGr` state of the key.   
 
 To understand the problem with these characters, we'll have to take a look at their approximate English transliterations.
    
@@ -45,14 +45,14 @@ So for example, with the `T` key
 
 (The more used letter betweeen the two is assigned to the base key)
 
-This still left the two pre-nasalised characters dangling, and I had to put them in random keys which wasn't at all intuitive to anybody. As such this left me wondering if there was any other other consistent and intuitive method which I could include in the layout for accessing aspirated and pre-nasalised characters
+This still left the two pre-nasalised characters dangling, and I had to put them in random keys which wasn't at all intuitive to anybody. As such this left me wondering if there was an other consistent and intuitive method which I could include in the layout for accessing aspirated and pre-nasalised characters
    
 ## Say Hello to Our Messiah, Les Touches Mortes, aka Dead keys
-Dead keys presented itself as the solution to all of my above mentioned issues. Dead keys are keys which modify the output of the proceeding keypress. Different platforms have different implementations and limitations with them, but on windows with MSKLC I was able to assign a dead key to any key (Unlike xkb on Linux). So I assigned the `x` key (`ං` on the layout) and `shift+x` (`ඃ` on the layout) as dead keys to access pre-nasalized characters and aspirated characters respectively
+Dead keys presented itself as the solution to all of my above mentioned issues. Dead keys are keys which modify the output of the proceeding keypress. Different platforms have different implementations and limitations with them, but on windows with MSKLC I was able to assign a dead key to any key (Unlike with xkb on Linux). So I assigned the `x` key (`ං` on the layout) and `shift+x` (`ඃ` on the layout) as dead keys to access pre-nasalized characters and aspirated characters respectively
 
 ## Les Touches Mortes : Édition Des Voyelles
 The writing system of the Sinhala language is an abugida, which means that we mark vowel sounds on consonants with diacritics/vowel markers (I still don't know the correct linguistic terminology). We also have dedicated vowel letters in Sinhala that are used if the word starts with a vowel sound.
-For all vowels (Which are still in modern usage). At first what I settled with with having the vowel marker characters on the base and shift state of the key, and to have the equivalent vowel letters for them to be accessible with `altGr`.   
+For all vowels (Which are still in modern usage). At first what I settled with having the vowel marker characters on the base and shift state of the key, and to have the equivalent vowel letters for them to be accessible with `altGr`.   
 
 So for example, with the `O` key,
 - `o` -> `ො`
