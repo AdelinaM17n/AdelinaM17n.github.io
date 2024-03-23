@@ -15,7 +15,7 @@ Here's a preview of the Wijesekara layout for reference
 
    
 ## Design Goals 
-My first and foremost goal of the layout was to make sure for it to be intuitive as possible to use for anyone who is used to the QWERTY layout, this obviously meant mapping Sinhala characters phonetically with the latin letters which were closest to them. Which turned out to be a far easier task than I anticipated for \*most\* characters. Other than that I also wanted it to be able to input any character of the *Sinhala Akshara Maalawa* (සිංහල අක්ෂර මාලාව) without any major hassle.
+My first and foremost goal with the design of the layout was to make sure for it to be intuitive as possible to use for anyone who is used to the QWERTY layout, this obviously meant mapping Sinhala characters phonetically with the latin letters which were closest to them. Which turned out to be a far easier task than I anticipated for \*most\* characters. Other than that I also wanted it to be able to input any character of the *Sinhala Akshara Maalawa* (සිංහල අක්ෂර මාලාව) without any major hassle.
    
 ## The Attack of The තටදඩ Nation
 The first major decision I had to make while designing this layout was the placement of the characters `ත,ට,ද,ඩ` and their aspirated and pre-nasalised counterparts. For all the other consonants with an aspirated version I was able to assign the base state of the key to the non aspirated character and the shift state to the aspirated characters, and if the character had a pre-nasalised version, I was able to assign it to `AltGr` state of the key.   
