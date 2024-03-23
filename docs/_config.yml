@@ -21,7 +21,7 @@
 title: Adelina's Blog
 email: MaheeshaAdelina@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This is a crudely put-together blog for documenting various things I am passionate about at the time
+  This is a very crudely put-together blog for documenting various things I am passionate about at the time
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
