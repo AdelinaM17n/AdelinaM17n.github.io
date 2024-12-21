@@ -11,7 +11,7 @@ After about a week of messing around, I am finally finishing in on a working pro
    
 She'd be the first one to see this in action, and realistically, the only one I could show this to among people I know that could fully appreciate what it is to the fullest.   
 
-And the moment of truth attrives, I run the program, and hit the keys `a` `k` `k` `a` `a`, and it outputs `අක්කා`, without any issues or hiccups. A sense of relief and happiness fills me as I call out to my sister.
+And the moment of truth arrives, I run the program, and hit the keys `a` `k` `k` `a` `a`, and it outputs `අක්කා`, without any issues or hiccups. A sense of relief and happiness fills me as I call out to my sister.
 The ensuing conversation goes as follows, roughly translated from Sinhala to English.
 > Her : What's up?   
 Me : I've finally finished the keyboard thingy I've been working on for ages, I'm typing with it right now   
